@@ -732,6 +732,7 @@ InstallGlobalFunction( "TestDirectory", function(arg)
                StringOfMemoryAmount( mem ), 
                " allocated for ", files[i].shortName, "\n" );
     fi;
+    GASMAN("collect");
   od;       
   
   STOP_TEST := STOP_TEST_CPY;
